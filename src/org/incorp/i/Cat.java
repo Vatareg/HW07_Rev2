@@ -13,7 +13,7 @@ public class Cat {
     }
 
     public void eat(Plate plate) {
-
+// Коты едят если есть еда. Если нет еды не едят.
         if (plate.decrease(10)) {
             System.out.println("CAt eat...");
             full = true;
