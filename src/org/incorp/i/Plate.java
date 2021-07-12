@@ -8,14 +8,7 @@ public class Plate {
         this.food = food;
     }
 
-    public int getFood() {
-        return food;
-    }
-
-    public void setFood(int food) {
-        this.food = food;
-    }
-
+// докидываем еду когда та кончилась. Не забыть вывод на экран
     public boolean foodDrop(int amount){
         if(amount<0){
             return false;
@@ -25,6 +18,7 @@ public class Plate {
             return true;
         }
     }
+    // кот поел. вычетаем кол-во еды которое съел кот
     public boolean decrease(int amount){
         if(amount<0||amount>food){
             return false;
